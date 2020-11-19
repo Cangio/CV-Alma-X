@@ -1,0 +1,66 @@
+-	DATA	---------------------------
+
+detailed dimensions + photo:
+	positioning pin (+position?)
+	reference marks
+	"crucial elements" (socket,...)
+
+general dimension + photo + position:
+	known elements
+
+general dimension + photo:
+	(some) random elements
+
+relative distance + type:
+	AR/QR tags
+
+
+SOCKET
+	german type F/french type E/ similar
+	_standard: 	CEE 7.2F3
+			CEE 7.2F4
+			.28 GERMAN
+			.22 SCHUKO
+
+A	CAMERA CALIBRATION	-----------
+ adapt gigi's alg
+
+B	VIDEO STREAM SAMPLING	-----------
+ variables: risolution, rate, color
+ pre-filtering: denoising (gaussian), exposure (exponential)
+
+1	BOX / FACES RECOGNITION	-----------
+ specific filtering: bilinear, edges improvement
+ shape recognition: rectangulars
+ shape reconstruction: box, orientation, dimensions
+ in-space localization: distances
+
+2	MAIN SWITCH RECOGNITION	-----------
+ elements highlighting, isolations
+ heuristics: panel's side, color, text
+
+3	MARKERS RECOGNITION	-----------
+ gough for circles, feature/template matching, cross-sight interpolation
+ aruco: https://docs.opencv.org/master/d5/dae/tutorial_aruco_detection.html
+
+4	PANEL RECTIFICATION	-----------
+ markers' center rectangle
+ rectangle homography
+ #map camera view motion to rover motion: distances, fov, speed mapping
+
+5	ELEMENT RECOGNITION	-----------
+REFERENCE PIN
+ gough circular, matching(aligned)
+ shape, dimensions reconstruction of ref.pin
+VOLTAGE REFERENCE
+ matching(orientation), color, socket holes matching
+ shape, dimensions of reference
+VOLTAGE PLUG
+ shape, dimensions, matching,color
+ orientatin(moments of inertia)
+ #gripper catch 
+ #plug-holes alignment
+VOLTAGE SOCKET
+ holes, distances, dimensions (gough)
+ shape dimensions orientation of plug
+SWITCHES ARRAY
