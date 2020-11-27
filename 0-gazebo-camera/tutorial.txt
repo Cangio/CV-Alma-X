@@ -1,0 +1,5 @@
+http://gazebosim.org/tutorials?tut=ros_gzplugins#Camera
+
+http://gazebosim.org/tutorials/?tut=ros_depth_camera
+
+http://gazebosim.org/tutorials?tut=camera_save&cat=sensors
