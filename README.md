@@ -27,3 +27,5 @@ This software provides:
 5. All switches should be manipulated one by one - the activation of more than one in a single move will cause the reset of all the elements;
 6. Voltage measurement is to be conducted on standard ‘German type F’/’French type E’ or similar power socket or terminals with similar dimensions and connection requirements;
 7. Some panel elements can be sensitive to forces and torques exceeding operational limits. Those elements should not be ‘damaged’ during operations and can be scored differently than stiff ones.
+
+#prova
