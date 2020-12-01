@@ -1,0 +1,72 @@
+2a)
+extrinsic, intrinsic parameters, camera calibration
+ppm, homography
+image warping, distorsion compensation
+
+2)
+camera orientation from vanishing points
+
+3) intensity transformations
+linear stretching operator
+exponential operator (for over/under-exposed)
+histogram equalization (enhancement)
++ local histograms/ hist.matching
+
+4a) spatial filtering
+low pass filters:
+mean filter (linear,fastest)
+gaussian f. (linear)
+median f. (non lin., sharper edges)
+bilinear (non lin.)
+non local mean f. (non lin., best)
+
+4) fourier transformation filtering
+rotation compensation for images with periodic pattern
+
+5) image segmentation
+denoising (separation of hist. peaks)
+automatic thresholding:
+peaks method (lowest valley between peaks)
+otsu's (min in-group spreading)
+adaptive th.:
+hysteresis th. 
+colour based segmentation:
+malanobhis distance
+
+6) motion detection
+3 frames difference
+background subtraction/initialization/updating
+
+7)binary morphology
+opening (er->dil) with specific kernel to preserve elements
+closing (dil->er)
+
+8) blob analysis
+compactness(form factor)
+(hu's) moments (shape recognition)
+covariance matrix (orientation: principal axis of inertia)
+eigenvalues (size)
+
+9)edge detection
+canny's
+differences between original image and dilation
+
+10)local inveriant features
+harris corner detector
+sift
+surf (blob like features)
+mser (uniform regions, darker/lighter than surroundings)
+fast (corner like features)
+brief, orb,brisk (faster)
++best bin first search
+
+11)object detection
+shape based matching (edges only from training image)
+(generalized) hough transform (shape recognition)
+
+12)3d cv
+lidar
+multiple viewpoints, disparity map
+box filtering
+
+
