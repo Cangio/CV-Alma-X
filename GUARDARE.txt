@@ -1,3 +1,0 @@
-contorni in base al colore:
-usare canny, houghline o findcontours
-usabili in sequenza?(canny crea un immagine)

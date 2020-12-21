@@ -1,0 +1,23 @@
+CONTENT
+
+channel_mask_n_edges
+
+#bilateral filter and grayscaling
+#channels' extraction, color masks, thresholding
+#hue & s/v channels for color masking
+#thresholding using vector's logic & direct access to channels
+#test on marsyard image
+#adaptive color mask & thresholding
+
+
+edges_n_contours
+
+#color masking,edges & contours; w/ or w/out canny
+#bounding and min area rectangle
+
+
+filtering_n_edges
+
+#effect of bilinear filter, showed by histograms
+
+
