@@ -19,7 +19,7 @@ This software provides:
 * automatic element detection;
 * automatic manipulation;
 ## The panel
-![Panel](/images/panel.png)
+![Panel](/images/panel/panel.jpg)
 1. Switches can be lever or rotational type;
 2. The panel will have the form of a box positioned flat on the ground with dimensions of 0.72x0.72m at the base and a height of about 0.30-0.40m;
 3. Controls can be mounted on the top or sides of the panel;
